@@ -25,6 +25,8 @@ In this exercise, you will create a Log Analytics workspace by configuring basic
 
 1. Click on **+ Create**.
 
+   ![ws name.](media/L2AE1S1A.png)
+
 1. Now add the following configurations:
 
    - Subscription: Leave it to **Default (1)**
@@ -91,10 +93,6 @@ In this exercise, you will enable diagnostics for the AVD workspace by configuri
 
    ![ws name.](media/avd-5.png)
 
-   > **Note**: Sometimes the Host Pool may already be preconfigured automatically, and you may see something similar to the screenshot below. In that case, you can skip the manual configuration steps and continue directly from Point 3.
-
-   ![ws name.](media/la8888.png)
-   
 1. Once the deployment is successful, **Refresh** the **CheckAMAConfiguration** page. You'll be able to see the settings applied to the host pool.
 
    ![ws name.](media/L2AE2S8.png)
@@ -111,17 +109,17 @@ In this exercise, you will enable diagnostics for the AVD workspace by configuri
 
    ![ws name.](media/L2AE2S11.png)
    
-1. On **CheckAMAConfiguration** page, Select **Session host data settings (1)**. Then, select the **<inject key="Log Analytics Workspace Name" enableCopy="false" /> (2)** analytics workspace as the **Workspace destination**.
+1. On **CheckAMAConfiguration** page, Select **Session host data settings (1)**. Then, select the **<inject key="Log Analytics Workspace Name" enableCopy="false" /> (2)** analytics workspace as the **Workspace destination**.Click on the **Create data collection rule (3)**.
 
    ![ws name.](media/L2AE2S12.png)
 
-1. Click on the **Create data collection rule**.
-
-   ![ws name.](media/L2AE2S12a.png)
-
 1. On the **Deploy template** page, Click on **deploy**.
 
+   ![ws name.](media/L2AE2S12A.png)
+
 1. Once the deployment is successful, **Refresh** the **CheckAMAConfiguration** page 2-3 times as it takes some time to load the details. You'll be able to see the Data Collection rule has been created.
+
+   ![ws name.](media/L2AE2S12B.png)
 
 1. On the **Check AMA Configuration** page, scroll down to the **Session hosts missing Azure Monitor extension** section and then click on **Add extension**.
 

@@ -10,23 +10,19 @@ In this lab, you will be reviewing monitoring data of the AVD environment using 
 
 ## Exercise 1: Exploring Insights for AVD
 
-### Task 1: Access AVD using the browser and Remote client
+### Task 1: Access AVD using the browser and Windows App
 
-In this task, you will access the Azure Virtual Desktop environment using both the Remote Desktop client and browser, subscribe to the appropriate workspace, sign in with your credentials, and launch the Session Desktop to prepare for monitoring and management activities.
+In this task, you will access the Azure Virtual Desktop environment using both the Windows App and browser, subscribe to the appropriate workspace, sign in with your credentials, and launch the Session Desktop to prepare for monitoring and management activities.
    
-1. Navigate to **Your Own PC/computer/workstation**, go to **Start** search for **Remote desktop** and open the application with the exact icon as shown below.
+1. Navigate to **Your Own PC/computer/workstation**, go to **Start** search for **Windows App** and open the application with the exact icon as shown below.
 
    ![ws name.](media/137.png)
    
-1. Click on the **ellipsis(...)** and select **Unsubscribe**. Click on **Continue** for any warning.
+1. Click on the **account icon** in the top-right corner, then select **Sign in with another account**.
 
    ![ws name.](media/lb16.png)
 
-   >**NOTE**: We need to unsubscribe from the feed because in Exercise 4 we subscribed to the AVD feed using a different user.
-
-1. Click on the **Subscribe** button.
-
-   ![ws name.](media/a49.png)
+   >**NOTE**: We need to switch accounts because in Exercise 4 you signed in with a different user.
 
 1. Enter the user credentials to access the workspace.
 
@@ -36,10 +32,6 @@ In this task, you will access the Azure Virtual Desktop environment using both t
 
       ![ws name.](media/password2.png)
        >**Note**: If MFA prompts, please follow the MFA steps provided.
-
-1. Make sure to **uncheck** Allow my organization to manage my device and click on **No, sign in to this app only** if you are directed to the tab.
-
-   ![ws name.](media/ex4t1s9.png)
 
 1. In the AVD client, double-click on the **Session Desktop** to access it. 
 
@@ -52,7 +44,7 @@ In this task, you will access the Azure Virtual Desktop environment using both t
    - Username: Paste the username  **<inject key="Avd User 02"></inject>** then click on **Next**.
    - Password: Paste the password **<inject key="AVD User Password"></inject>** and click on* **OK**.
    
-   ![ws name.](media/lb37-1.png)
+     ![ws name.](media/lb37-1.png)
   
 1. The virtual Desktop will launch as shown below. 
 
@@ -71,21 +63,21 @@ In this task, you will use Azure Virtual Desktop Insights to monitor your enviro
 
    ![ws name.](media-2/Lab2(a)-ex2-step2.png)
    
-1. In **Insights** page, click on **Overview** tab. Here you can see **gs-avd-hp** host pool. Scroll down,you will be able to monitor the connection diagnostics and performance and utilization of the session hosts.
+1. In **Insights** page, click on **Overview** tab. Here you can see the **GS-AVD-HP** host pool. Scroll down,you will be able to monitor the connection diagnostics and performance and utilization of the session hosts.
 
-   ![ws name.](media-1/new-avd-lab13-18.jpg)
+   ![ws name.](media-1/p15t2s2.png)
    
-1. Click on **Users (1)** tab, In **UPN to search for**, paste **<inject key="Avd User 01"></inject>** **(2)** and wait for the data to load. This tab gives an overview of the user's usage. Scroll down and explore different information loaded.
+1. Click on the **Users** tab. In **UPN to search for**, paste **<inject key="Avd User 01"></inject>** and wait for the data to load. This tab gives an overview of the user's usage. Scroll down and explore the different information loaded.
 
-   ![ws name.](media-1/new-avd-lab13-23.jpg)
+   ![ws name.](media-1/p15t2s3.png)
    
 1. Click on the **Utilization** tab, This tab gives information about session summary, core info, and more information about the utilization of resources.
 
-   ![ws name.](media-1/new-avd-lab13-20.jpg)
+   ![ws name.](media-1/p15t2s4.png)
    
 1. Click on **Clients** **(1)** tab, Here you'll be able to monitor the number of users **(2)** connected to AVD using the browser and remote client application.
 
-   ![ws name.](media-1/new-avd-lab13-22.jpg)
+   ![ws name.](media-1/p15t2s5.png)
    
 1. Spend some time on the page to explore different monitoring abilities offered by Azure Insights.
 

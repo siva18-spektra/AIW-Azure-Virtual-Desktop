@@ -21,7 +21,7 @@ In this lab, you will complete the following exercises:
 
 In the exercsie, we will be creating a storage account with a Classic File Share which will be used to store user profiles for FSlogix.
 
-1. Navigate to the Azure portal, search for **Storage accounts** in the search bar, and select **Storage accounts** from the suggestions.
+1. Navigate to the Azure portal, search for **Storage accounts (1)** in the search bar, and select **Storage accounts (2)** from the suggestions.
 
    ![ws name.](media/up10.png)
    
@@ -49,6 +49,8 @@ In the exercsie, we will be creating a storage account with a Classic File Share
    
       ![ws name.](media/avdstoargen.png)
 
+1. On the **Advanced** tab of the Create a storage account page, leave all settings at their default values, and then click **Next** to continue.
+
 4. In the **Networking** tab, use the following configurations:
 
    - Public network access: **Enable (1)** 
@@ -58,11 +60,13 @@ In the exercsie, we will be creating a storage account with a Classic File Share
    - Virtual Network: **aadds-vnet (4)**
    - Subnets: **sessionhosts-subnet (10.0.1.0/24) (5)**
    - Leave the rest to default settings.
-   - Click on **Review + create(6)**.
+   - Click on **Next (6)**.
 
       ![ws name.](media/lab6-3n.png)
 
-5. On the **Security** tab, make sure   to enable **Require secure t   ransfer for REST API operations**, **Allow enabling anonymous access on individual containers**, and **Enable storage account key access** (1) options. Once enabled, click on the **Next(2)** button.
+1. On the **Data protection** tab of the Create a storage account page, leave all settings at their default values, and then click **Next** to proceed.
+
+5. On the **Security** tab, make sure   to enable **Require secure t   ransfer for REST API operations**, **Allow enabling anonymous access on individual containers**, and **Enable storage account key access** **(1)** options. Once enabled, click on the **Review + create (2)** button.
 
    ![ws name.](media/lab6-2n.png)
 
@@ -138,7 +142,7 @@ In this exercise, we will give Storage File Data SMB Share Contributor permissio
 
    ![ws name.](media-1/Ex6-task2-step6.png)
    
-1. Search and select username **<inject key="AzureAdUserEmail"></inject> (1)** and click on **Select (2)**.
+1. Search username **<inject key="AzureAdUserEmail"></inject> (1)** and select username **<inject key="AzureAdUserEmail"></inject> (2)** and click on **Select (3)**.
 
    ![ws name.](media/vd15.png)
    
@@ -194,7 +198,7 @@ In this exercise, we will give Storage File Data SMB Share Contributor permissio
 
 In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0** session host using a Powershell script.
 
-1. In your Azure portal, search for **Virtual Machines** in the search bar and click on **Virtual Machines** from the suggestions.
+1. In your Azure portal, search for **Virtual Machines (1)** in the search bar and click on **Virtual Machines (2)** from the suggestions.
 
      ![ws name.](media/up11.png)
       
@@ -289,6 +293,7 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
    >iii) Set the profile container location to the Azure Classic File Share location we created.
 
 7. In line 2 in the script, replace **NameofStorageAccount** with **<inject key="Storage Account Name"></inject>** and then click on **Run** to execute the script.
+
      ![ws name.](media/jvm24.png)
 
 9. Wait for some time for the script to execute. Once done, it will show an output saying **Script Executed successfully**.
@@ -389,11 +394,11 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
    
     >**Note:** It will take around five minutes for the script to execute.
   
-16. Now search for **Azure virtual desktop** in the search bar and select **Azure Virtual Desktop** from the suggestions.
+16. Now search for **Azure virtual desktop (1)** in the search bar and select **Azure Virtual Desktop (2)** from the suggestions.
 
     ![ws name.](media/w1.png)
      
-17. Click on **Users (1)**, then in the search bar paste your username **<inject key="AzureAdUserEmail"></inject>** and then click on your user **(2)**.
+17. Click on **Users (1)**, then in the search bar paste your username **<inject key="AzureAdUserEmail"></inject> (2)** and then click on your user **(3)**.
 
     ![ws name.](media/vd19.png)
     
@@ -414,11 +419,11 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
     ```
     - Username: Paste username **<inject key="AzureAdUserEmail"></inject>**, then click on **Next**.
    
-    ![ws name.](media/w24.png)
+      ![ws name.](media/w24.png)
 
     - Password: Paste password **<inject key="AzureAdUserPassword"></inject>** and click on **Sign in**.
 
-    ![ws name.](media/vd21.png)
+      ![ws name.](media/vd21.png)
 
       >**Note:** If there's a dialog box saying **Stay signed in**, then select the **No** option.
 
@@ -429,6 +434,8 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
     ![ws name.](media/labinst24.png)
 
 22. Select **Allow** on the prompt asking permission to access local resources.
+
+1. On the **In Session Settings** screen, leave **Clipboard** checked so that you can copy and paste between your local device and the session, then click **Connect**.
 
     ![ws name.](media/lab4-10.png)
 
@@ -459,7 +466,7 @@ In this Exercise, we will install and configure FSLogix in the **AVD-HP01-SH-0**
 
 In this exercise, we will be accessing the Classic File Share to verify the user profiles stored in the .vhd format.
 
-1. Return to the Azure Portal, search for **storage accounts** in the search bar and click on **Storage Accounts** from the suggestions.
+1. Return to the Azure Portal, search for **storage accounts (1)** in the search bar and click on **Storage Accounts (2)** from the suggestions.
 
       ![ws name.](media/up10.png)
     

@@ -59,11 +59,19 @@ In this exercise, you will access the published RemoteApp application by configu
 
    ![ws name.](media/word.png)
 
+   >**Note:** The first time you connect, you may see one or both of the following introductory screens. On the **Remote Desktop Web client is now Windows App** screen, click **Next**, and on the **Enhance your experience with a guided tour** screen, click **Not now** to continue.
+   >
+   >![ws name.](media/note7A.png)
+   >
+   >![ws name.](media/note7B.png)
+
 1. Select **Allow** on the prompt asking permission to **Access local resources**.
+
+1. On the **In Session Settings** screen, leave **Clipboard** checked so that you can copy and paste between your local device and the session, then click **Connect**.
 
    ![ws name.](media/lab4-10.png)
 
-1. Enter the lab credentials to access the application and click on **Submit**.
+1. Enter the lab credentials to access the application and click on **Sign In**.
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
@@ -112,20 +120,20 @@ In this exercise, you will access the published AVD desktop by updating the host
 
 1. Navigate to **GS-AVD-HP**, then go to **Properties (1)**. Under the **Preferred app group type**, choose **Desktop (2)** and click **Save (3)**.
    ![ws name.](media/hostpoool.png)
-   
+      
     ![ws name.](media/avd-9na.png)
    
-1. Refresh the **Remote Desktop Web Client** page.
+1. Refresh the **Windows App Web Client** page.
 
 1. Click on the tile named **Session Desktop** to launch the desktop.
 
    ![ws name.](media/session.png)
 
-1. Select **Allow** on the prompt asking permission to **Access local resources**.
+1. On the **In Session Settings** screen, leave **Clipboard** checked so that you can copy and paste between your local device and the session, then click **Connect**.
 
    ![ws name.](media/lab4-10.png)
 
-1. Enter the lab credentials to access the application and click on **Submit**.
+1. Enter the lab credentials to access the application and click on **Sign In**.
 
    > **Note:** If you are unable to sign in using the provided password, try logging in with the **AzurePassword** available in the **AzureCreds** file on the desktop.
 
@@ -141,7 +149,7 @@ In this exercise, you will access the published AVD desktop by updating the host
    
    > **Note:** If you see a black screen while launching the session desktop, please re-start the session desktop by re-performing the lab from step 2.
 
-1. Return back to the Azure Portal, search for **Azure virtual desktop** in the search bar, and select **Azure Virtual Desktop** from the suggestions.
+1. Return back to the Azure Portal, search for **Azure virtual desktop(1)** in the search bar, and select **Azure Virtual Desktop(2)** from the suggestions.
 
    ![ws name.](media/w1.png)
 

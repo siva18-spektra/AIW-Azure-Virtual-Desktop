@@ -4,9 +4,9 @@
 
 ## Lab Scenario
 
-Contoso is planning to set up its infrastructure on Azure. As a first step, Contoso needs you to provision a host pool which is the main component of AVD. The creation of a host pool also includes session hosts, a default application group, and a workspace. 
+Contoso is planning to set up its infrastructure on Azure. As a first step, you need to provision a host pool for Azure Virtual Desktop. The host pool creation includes session hosts, a default application group, and a workspace.
 
-A Host Pool is a collection of Azure virtual machines that register to Azure Virtual Desktop as session hosts when you run the Azure Virtual Desktop agent. All session host virtual machines in a host pool should be sourced from the same image for a consistent user experience. To start host pool creation, we will login to the Azure portal.
+A host pool is a collection of Azure virtual machines that register with Azure Virtual Desktop as session hosts. All session hosts should use the same image for a consistent user experience.
 
 ## Lab Objective
 
@@ -16,12 +16,11 @@ In this lab, you will complete the following exercise:
 
 ## Exercise 1: Create Host Pool using Getting Started Wizard
 
-In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using the Getting Started Wizard, including setting up session hosts, domain join, and registering the workspace.
+In this exercise, you will create an Azure Virtual Desktop (AVD) host pool through the Getting Started Wizard. You will add session hosts, configure domain join, and register the workspace.
 
-   >**Important:** From your LabVM Desktop, Open the AzureCreds file and **Copy** the AzurePassword provided in the Notepad. This is the permanent password for the lab. Since Temporary Access Pass (TAP) is being used, you may be required to use this password in certain steps, such as when signing in to the session host or accessing applications like Excel and Word within the session.
+> **Important:** From your Lab VM desktop, open the **AzureCreds** file and copy the **AzurePassword** shown in Notepad. This password is required for some lab steps.
 
-   
-   ![ws name.](media/2avd1at.png)
+![ws name.](media/2avd1at.png)
 
 1. On the **Azure portal,** search for **Azure Virtual Desktop** **(1)** in the search bar and select **Azure Virtual Desktop** **(2)** from the suggestions.
 
@@ -31,24 +30,26 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 
    ![ws name.](media/2avd2n.png)
 
-1. On **Create a host pool** page, provide the information as mentioned below,
+1. On the **Create a host pool** page, under **Project details**, configure the following settings:
 
-   **A. Project Details:**
+   | Setting | Value |
+   |---------|-------|
+   | Subscription | Leave the default subscription selected **(1)** |
+   | Resource group | Select **AVD-HostPool-RG-avd (2)** |
+   | Host pool name | Enter **GS-AVD-HP (3)** |
+   | Location | Select **<inject key="Region" enableCopy="false"/> (4)** from the **Location** drop-down list. |
+   | Preferred app group type | Verify that **Desktop (5)** is selected. |
 
-   - Subscription: **Leave it as default (1)**
-   - Resource Group: Select **AVD-HostPool-RG-avd (2)**
-   - Host pool name: **GS-AVD-HP (3)**
-   - Location: Select **<inject key="Region" enableCopy="false"/> (4)** from the drop-down list.
-   - Preferred app group type: **Desktop (5)**
+   > **Note:** Leave all other settings with their default values unless instructed otherwise.
 
       ![ws name.](media/vd7.png)
 
-1. In the **Host pool details** section, enter the required information and then click **Next: Session hosts > (10)** to proceed.
+1. In the **Host pool details** section, configure the following settings, and then select **Next: Session hosts > (10)** to proceed.
 
-   - Host pool type: **Pooled (6)**
-   - Create Session Host Configuration: **No (7)**
-   - Load balancing algorithm: **Breadth-first (8)**
-   - Max session limit: **16 (9)**
+   - Host pool type: Verify that **Pooled (6)** is selected.
+   - Create Session Host Configuration: Select **No (7)**.
+   - Load balancing algorithm: Verify that **Breadth-first (8)** is selected.
+   - Max session limit: Enter **16 (9)**.
 
       ![ws name.](media/projdetailab.png)
 
@@ -68,20 +69,20 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 
    ![ws name.](media/projdetailc.png)
 
-1. In the Search bar, search for **Windows multi-session (1)**, then under **Windows multi-session + Microsoft 365 Apps** choose **Select (2)** and then select **Windows 11 Enterprise multi-session + Microsoft 365 Apps, Version 22H2** *(choose from dropdown)*
+1. In the **Select an image** pane, search for **Windows multi-session (1)**. Under **Windows multi-session + Microsoft 365 Apps**, select **Select (2)**, choose **Windows 11 Enterprise multi-session, version 25H2 + Microsoft 365 Apps - x64 Gen 2** from the drop-down list, and then select **Select**. *(choose from dropdown)*
 
    ![ws name.](media/projdetaild.png)
    ![ws name.](media/projdetaile.png)
 
-1. Virtual machine size: **Standard D4s v4**. Click on **Change Size**, then select **D4s_v4** and click on **Select** as shown below.
+2. For **Virtual machine size**, select **Change size**, search for **D4s_v4 (1)**, select **D4s_v4 (2)**, and then select **Select (3)**.
 
-   ![ws name.](media/2avd18.png)
+   ![Select the virtual machine size.](media/2avd18.png)
 
 1. Provide the information as mentioned below:
    
    - Number of VMs: **2 (1)**
    - OS disk type: **Standard HDD (2)**
-   - OS disk size: **Resize to 128 GiB (P10) (3)**
+   - OS disk size: **Default size (128 GiB) (3)**
 
       ![ws name.](media/projdetailf.png)
 
@@ -116,9 +117,9 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 
 1. For **To this workspace**, click on **Create new (2)**.
 
-3. Enter **GS-AVD-WS (3)** as the workspace name.
+1. Enter **GS-AVD-WS (3)** as the workspace name.
 
-4. Click **OK (4)** to confirm.
+1. Click **OK (4)** to confirm.
 
    ![ws name.](media/projdetaili.png)
 
@@ -131,7 +132,7 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 1. Once the deployment succeeds, it will look similar to the image shown below: 
    - Click on **AVD-HostPool-RG-avd** to navigate to the resource group.
 
-   ![ws name.](media-1/subscriptionrg.png)
+      ![ws name.](media-1/subscriptionrg.png)
 
 1. Select **GS-AVD-HP** host pool.
 
@@ -155,8 +156,8 @@ In this exercise, you will create an Azure Virtual Desktop (AVD) host pool using
 <validation step="97d211ae-121b-445b-a278-054cda35de33" />   
 
 ## Summary
-In this lab, you created an Azure Virtual Desktop host pool using the Getting Started Wizard, configured session hosts, joined them to the domain, and registered the environment to a workspace for AVD access.
-   
-Now, click on the **Next** button present in the bottom-right corner of this lab guide.
-   
+In this lab, you created an Azure Virtual Desktop host pool using the Getting Started Wizard. You added session hosts, joined them to the domain, and registered the environment to a workspace for AVD access.
+
+Now select the **Next** button in the bottom-right corner of this lab guide.
+
 ![Start Your Azure Journey](./media/Next.png) 

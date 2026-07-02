@@ -1,18 +1,24 @@
-# Lab 14: Microsoft Entra ID Domain Join (Read Only) 
+# Lab 14: Microsoft Entra ID Domain Join
 
 ### Estimated Duration: 20 Minutes
 
-##  Lab Scenario
+## Lab Scenario
 
- Contoso is planning to set up its infrastructure on Azure. As a first step, Contoso needs you to provision a host pool which is the main component of AVD. Creation of the host pool also includes session hosts domain joined through Microsoft Entra ID, default application group, and a workspace.
+Contoso is planning to set up its infrastructure on Azure. As a first step, Contoso needs you to provision a host pool, which is the main component of Azure Virtual Desktop (AVD). Creating the host pool also includes session hosts that are domain-joined through Microsoft Entra ID, a default application group, and a workspace.
 
-A Host Pool is a collection of Azure virtual machines that register to Azure Virtual Desktop as session hosts when you run the Azure Virtual Desktop agent. All session host virtual machines in a host pool should be sourced from the same image for a consistent user experience. To start with, we will log in to the Azure portal.
+A **Host Pool** is a collection of Azure virtual machines that register to Azure Virtual Desktop as session hosts when the Azure Virtual Desktop agent runs on them. All session host virtual machines in a host pool should be sourced from the same image, so that every user gets a consistent experience. To get started, you will first log in to the Azure portal.
+
+## Lab Objective
+
+In this lab, you will complete the following exercise:
+
+- Exercise 1: Create a Host Pool using the Getting Started Wizard
 
 ## Exercise 1: Create a Host Pool using the Getting Started Wizard
 
-In this exercise, We'll be creating the Host pool using **Getting Started Wizard** using minimum effort and information.
+In this exercise, you will create a host pool using the **Getting Started Wizard**, which lets you do this with minimum effort and information.
 
-1. On the **Azure portal** search for **Azure Virtual Desktop** in the **search bar** **(1)** and select **Azure Virtual Desktop** **(2)** from the suggestions.
+1. On the **Azure portal** search for **Azure Virtual Desktop** **(1)** in the **search bar** and select **Azure Virtual Desktop** **(2)** from the suggestions.
 
    ![ws name.](media/2avd1.png)
 
@@ -23,12 +29,13 @@ In this exercise, We'll be creating the Host pool using **Getting Started Wizard
 1. On the **Basics** tab, provide the following information and click **Next: Session hosts >** **(10)**.
 
    - Subscription: **Leave it as default (1)**
-   - Resource Group prefix: Enter **AVD-HostPool-RG-avd (2)**
+   - Resource Group: **Leave it as default (2)**
    - Host pool name: **AVD-AADJ-HP (3)**
    - Location: Select **<inject key="Region" enableCopy="false"/> (4)** from the drop-down list.
-   - Preferred app group type: **Desktop (5)**
-   - Host pool type: **Pooled (6)**
-   - Create Session Host Configuration: **No (7)**
+   - Validation environment: **Yes (5)**
+   - Preferred app group type: **Desktop (6)**
+   - Host pool type: **Pooled (7)**
+   - Create Session Host Configuration: leave as default (**No**)
    - Load balancing algorithm: **Breadth-first (8)**
    - Max session limit: **5 (9)**
 
@@ -46,16 +53,16 @@ In this exercise, We'll be creating the Host pool using **Getting Started Wizard
 
         ![](media-1/new-avd-lab13-15a.png)
 
-1. In the **Image**, click on **See all images** to choose the required images.
+1. In the **Image** field, click on **See all images** to choose the required image.
 
    ![ws name.](media/projdetailc.png)
 
-1. In the Search bar Search for **Windows multi-session (1)**, then under **Windows multi-session + Microsoft 365 Apps** choose **Select (2)** and then select **Windows 11 Enterprise multi-session + Microsoft 365 Apps, Version 22H2** *(choose from dropdown)*
+1. In the search bar, search for **Windows multi-session (1)**, then under **Windows multi-session + Microsoft 365 Apps** choose **Select (2)**, and then select **Windows 11 Enterprise multi-session, Version 25H2 + Microsoft 365 Apps** *(choose from dropdown)*.
 
    ![ws name.](media/projdetaild.png)
    ![ws name.](media/projdetaile.png)
 
-1. Virtual machine size: **Standard D4s v4**. *Click on **Change Size**, then select **D4s_v4** and click on **Select** as shown below*
+1. Virtual machine size: **Standard D4s v4**. Click on **Change size**, search for **D4s_v4 (1)**, select the **D4s_v4 (2)** row, and click **Select (3)** as shown below.
 
    ![ws name.](media/2avd18.png)
 
@@ -63,7 +70,7 @@ In this exercise, We'll be creating the Host pool using **Getting Started Wizard
    
    - Number of VMs: **2 (1)**
    - OS disk type: **Standard HDD (2)**
-   - OS disk size: **Resize to 128 GiB (P10) (3)**
+   - OS disk size: **Default size (128GiB) (3)**
 
       ![ws name.](media/projdetailf.png)
 
@@ -84,10 +91,10 @@ In this exercise, We'll be creating the Host pool using **Getting Started Wizard
 
 1. **Virtual Machine Administrator account**
 
-    - User name: **demouser (1)**
+    - Username: **demouser (1)**
     - Password: **Password.1!! (2)**
     - Confirm password: **Password.1!!** **(3)**
-    - Click on **Next : Workspace > (4)**
+    - Click on **Next: Workspace > (4)**
 
         ![](media/vmadminaccount.png)
 
@@ -108,7 +115,7 @@ In this exercise, We'll be creating the Host pool using **Getting Started Wizard
 
     ![ws name.](media/gsw7.png)
 
-1. It will take you to the Host pool. The following resources were created:
+1. This takes you to the host pool that was just created. The following resources were created:
 
     - Host Pool: 1 (AVD-AADJ-HP)
     - Session Host: 2 (AVD-AADJ-SH-0, AVD-AADJ-SH-1)
@@ -116,6 +123,10 @@ In this exercise, We'll be creating the Host pool using **Getting Started Wizard
     - Workspace: 1 (GS-AVD-WS)
 
         ![ws name.](media/gsw8a.png)
+
+## Summary
+
+In this lab, you created an Azure Virtual Desktop host pool using the Getting Started Wizard, with session hosts domain-joined through Microsoft Entra ID. Along the way, you configured the host pool basics, provisioned session host virtual machines, selected the VM image and size, set up networking, configured the Microsoft Entra ID domain join and admin account, and registered a default application group and workspace.
 
 Now, click on Next from the lower right corner to move on to the next page.
 

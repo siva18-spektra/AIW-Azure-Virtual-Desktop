@@ -27,6 +27,8 @@ In this task, you will through the process to understand the creation of a custo
 
 1. In your JumpVM launch browser and go to Aure Portal (https://portal.azure.com).
 
+   ![Launch Azure Portal](./media/avdportal1.png)
+
 1. In the Azure Portal, search for **Subscriptions (1)** and select it from the search result **(2)**.
 
    ![](./media/subscriptions.png)
@@ -63,6 +65,8 @@ In this task, you will through the process to understand the creation of a custo
 
    ![](media/2avd110.png)
 
+   ![](media/2avd110-note.png)
+
       >**Note**: If you encounter an error while creating the custom role indicating that a role with the same name already exists, you can skip the custom role creation steps and proceed directly to Exercise 2.
 
 1. In **Access Control (IAM)** click on **+ Add**  and select **Add role assignment** .
@@ -77,15 +81,19 @@ In this task, you will through the process to understand the creation of a custo
   
       - Click on **+ Select members (2)**
      
-      - Under Select, search for **Windows Virtual desktop** and select it **(3)**
+      - Under Select, search for **Azure Virtual desktop** and select it **(3)**
       
-      - Click on **Select (4)**.
-
-    > **Note:** In certain situations **Windows Virtual Desktop** might not be visible in the search results, in certain situations please search for **Azure virtual desktop** and select it from the search result.
-    
-    ![](media/roleass-v2.png)
+      - Click on **Select (4)**
+   
+         ![](media/roleass-v2.png)
     
 1. Click on **Review + assign**
+
+   ![](media/reviewassign.png)
+
+1. Review the configuration and click on **Review + assign**
+
+   ![](media/reviewassign-2.png)
 
 ## Exercise 2: Configure the Start VM on Connect feature
 
@@ -97,7 +105,7 @@ In this task, you will navigate to the Azure Virtual Desktop host pool, enable t
 
    ![ws name.](media/2avd1.png)
   
-1. On the left-hand side blade, click on **Host pools** **(1)** and select the **host pool** **(2)** we want to configure.
+1. On the left-hand side blade, click on **Host pools** **(1)** and select the **GS-AVD-HP** **(2)** we want to configure.
 
    ![](media-2/avdhp.png)
   
@@ -130,19 +138,15 @@ In this task, you will stop the Azure Virtual Desktop session host VMs from the 
 
 In this task, you will unsubscribe and resubscribe to the AVD workspace using the correct user credentials, launch the Session Desktop from the Remote Desktop client, sign in to access the virtual desktop, and verify that the session host VMs automatically start when the desktop connection is initiated.
 
-1. Navigate to **Your Own PC/computer/workstation**, go to **Start** search for **Remote desktop** and open the application with the exact icon as shown below.
+1. Navigate to **Your Own PC/computer/workstation**, go to **Start** search for **Windows App** and open the application with the exact icon as shown below.
 
    ![ws name.](media/137.png)
    
-1. Click on the **ellipsis(...)** and select **Unsubscribe**. Click on **Yes** for any warning.
+1. Click on the **account icon** in the top-right corner, then select **Sign in with another account**.
 
    ![ws name.](media/lb16.png)
 
-   >**Note:** We need to unsubscribe from the feed because in Exercise 4 we subscribed to the AVD feed using a different user.
-
-1. Click on the **Subscribe** button.
-
-   ![ws name.](media/a49.png)
+   >**Note:** We need to Sign in with another account because in Exercise 4 we already signed in with different user.
 
 1. Enter the user credentials to access the workspace.
 
@@ -164,7 +168,7 @@ In this task, you will unsubscribe and resubscribe to the AVD workspace using th
 
    - Password: **<inject key="AzureAdUserPassword"></inject>**
    
-   ![ws name.](media/avd-14.png)
+     ![ws name.](media/avd-14.png)
 
 1. Your virtual desktop will launch and look similar to the screenshot below. You can exit from the window by clicking on **X *i.e., the close button***. 
 

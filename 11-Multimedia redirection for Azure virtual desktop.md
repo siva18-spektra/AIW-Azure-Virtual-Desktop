@@ -18,7 +18,7 @@ In this lab, you will complete the following exercise:
 
 In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virtual Desktop, validate Teams media optimization, and test audio/video redirection by launching a Teams meeting inside the AVD session.
 
-1. Navigate to the Azure portal, then search for **Azure Virtual Desktop** in the search bar and select **Azure Virtual Desktop** from the suggestions.
+1. Navigate to the Azure portal, then search for **Azure Virtual Desktop (1)** in the search bar and select **Azure Virtual Desktop (2)** from the suggestions.
 
    ![ws name.](media/w1.png)
    
@@ -36,7 +36,7 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
 
       ![ws name.](media-2/rdpproperties.png)
 
-1. On your PC, search for **Remote Desktop** and open the remote desktop application with the exact icon as shown below.
+1. On your PC, search for **Windows App** and open the remote desktop application with the exact icon as shown below.
 
    ![ws name.](./media/remote.png)
    
@@ -44,7 +44,7 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
 
    ![ws name.](media/ex4t2s2.png)
    
-1. A window saying **Starting your app*, will appear. Wait for a few seconds, then enter your password to access the Application.
+1. A window saying *Starting your app*, will appear. Wait for a few seconds, then enter your password to access the Application.
 
     - Password: **<inject key="AzureAdUserPassword"></inject>**
 
@@ -59,14 +59,17 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
    ```
    winget upgrade --id Microsoft.Teams --source winget --silent --accept-package-agreements --accept-source-agreements
    ```
+   > **Note**: If the **winget** command does not work in PowerShell, ignore the error and continue with the remaining steps in the lab.
 
 1. After the desktop has loaded, search for **Teams (1)** and click **Open (2)**, as shown in the screenshot below.
 
    ![ws name.](./media/teamsopenn.png)
+
 1. You might see the popup stating Teams Need an Update then **Click on Open teams on web.** And login with  **<inject key="AzureAdUserEmail"></inject>**
     
     ![ws name.](./media/Checkweb.png)
-   >**Note:** It will open Microsoft Teams in the Microsoft Edge browser and prompt you to sign in. Please enter your username and password to log in to Teams on the web browser.
+
+      >**Note:** It will open Microsoft Teams in the Microsoft Edge browser and prompt you to sign in. Please enter your username and password to log in to Teams on the web browser.
 
 1. In the Everyone together in Teams pane, click on **Sign in** as **<inject key="AzureAdUserEmail"></inject>**.
 
@@ -75,6 +78,7 @@ In this exercise, you will configure Multimedia Redirection (MMR) for Azure Virt
 1. Enter password: **<inject key="AzureAdUserPassword"></inject>**
 
    ![ws name.](media/vd6.png)
+
    >**Note:** After you log in to Microsoft Teams, if a pop-up appears showing “What’s New in Teams”, click on “Continue” and then select “Got it” to proceed.
 
    >**Note:** If you get **Let Microsoft Teams VDI Optimiser access your camera or microphone** pop ups, click on **Yes**
