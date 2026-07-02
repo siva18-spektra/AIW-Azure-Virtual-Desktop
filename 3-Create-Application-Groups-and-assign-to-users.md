@@ -24,7 +24,7 @@ An application group of type ‘Desktop’ was created automatically while creat
 
 In this exercsie, You will create a new application group of type "RemoteApp" and publish two applications in it. Also, we will assign users to both application groups.
 
-1. Navigate to the Azure portal, Search for **Azure Virtual Desktop** in the search bar and select **Azure Virtual Desktop** from the search results.
+1. Navigate to the Azure portal, Search for **Azure Virtual Desktop (1)** in the search bar and select **Azure Virtual Desktop (2)** from the search results.
 
    ![ws name.](media/w1.png)
 
@@ -56,7 +56,9 @@ In this exercsie, You will create a new application group of type "RemoteApp" an
 
    ![ws name.](media/avd-53a.png)
 
-1. Then select **+ Add** in the **GS-AVD-HP - Application groups**  
+1. Then select **+ Add** in the **GS-AVD-HP - Application groups** 
+
+   ![ws name.](media/L3E1S8.png)
 
 1. In the **Basics** tab, do the following configuration: 
 
@@ -87,7 +89,9 @@ In this exercsie, You will create a new application group of type "RemoteApp" an
    
       ![ws name.](media-1/avd-7.png)
 
-1. Click on **Add.**    
+1. Click on **Add.**
+
+   ![ws name.](media/L3E1S13.png)
  
 1. Click on **+ Add Applications** again. 
 
@@ -102,7 +106,9 @@ In this exercsie, You will create a new application group of type "RemoteApp" an
    
       ![ws name.](media-1/avd-8.png)
 
-1. Click on **Add.**   
+1. Click on **Add.**
+
+   ![ws name.](media/L3E1S16.png)
 
 1. Click on **Next: Assignments >**.
 

@@ -21,7 +21,7 @@ This lab is designed to equip participants with hands-on experience in deploying
 * **Access Published Applications and Desktops using Browser**: This hands-on exercise aims to validate access to published desktops and applications through a web browser. Participants will log into the AVD web client and verify the user experience in a browser-based session.
 
 * **Access Published Applications and Desktops using AVD Desktop Client:** 
-This hands-on exercise aims to validate AVD session access using the Remote Desktop Client. Participants will install and configure the AVD desktop client to connect to assigned desktops and apps.
+This hands-on exercise aims to validate AVD session access using the Windows App Client. Participants will install and configure the AVD desktop client to connect to assigned desktops and apps.
 
 * **Setup FSLogix**: This hands-on exercise aims to configure FSLogix profile containers for user session persistence. Participants will provision Azure Files with Active Directory authentication, apply permissions, and integrate with AVD session hosts.
 
@@ -33,7 +33,7 @@ This hands-on exercise aims to validate AVD session access using the Remote Desk
 This hands-on exercise aims to enable and test the Start VM on Connect feature. Participants will reduce compute costs by ensuring session hosts only power on when users initiate a session.
 
 * **Multimedia Redirection for AVD**:
-This hands-on exercise aims to enable multimedia redirection and Microsoft Teams optimization for AVD. Participants will configure session hosts and test Teams functionality in a remote desktop scenario.
+This hands-on exercise aims to enable multimedia redirection and Microsoft Teams optimization for AVD. Participants will configure session hosts and test Teams functionality in a Windows App scenario.
 
 * **Security Modules**:
 This hands-on exercise aims to enhance security by implementing MFA, Conditional Access policies, screen capture protection, and AppLocker rules. Participants will secure user sessions and restrict unauthorized access.
@@ -102,6 +102,12 @@ To adjust the zoom level for the environment page, click the **A↕** icon locat
 
 ![](./media/vd4.png)
 
+## Resize the Virtual Machine View
+
+Use the **slider (three vertical dots)** located between the **Virtual Machine** and the **Lab Guide** panes to adjust the display size, allowing you to customize the layout based on your preference.
+
+![slider](./media/vd4a.png)
+
 ## Virtual Machine & Guide
  
 Your virtual machine is your workhorse throughout the workshop. The guide is your roadmap to success.
@@ -134,17 +140,21 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-    ![Enter Your Username](./media/avdlogin1.png)
+      ![Enter Your Username](./media/avdlogin1.png)
  
 3. Next, provide your password:
  
    - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
  
-   ![Enter Your Password](./media/vd6.png)
+      ![Enter Your Password](./media/vd6.png)
  
 4. If prompted to stay signed in, you can click **No**.
+
+   ![taysignedpopup](media/no.png)
  
-5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Cancel** to skip the tour.
+5. If a **Welcome to Microsoft Azure** pop-up window appears, simply click **Maybe later** to skip the tour.
+
+   ![taysignedpopup](media/vd5a.png)
 
 6. Now in the Azure portal, click on **Resource Groups** present under *Navigate*.
 

@@ -39,7 +39,9 @@ In this exercise, you will add new users to Microsoft Entra ID, assign them to t
 1. Click on **+ New user (1)** and select **Create new user (2)** from drop-down to add a new user.
 
    ![ws name.](media-1/lab7-ex1-s3.png)
+
    >**Note:** In some cases, the users might already be created. If you find that the users are already available, you can skip these steps and continue directly from the 8th point. Please recheck whether the membership is assigned; if it is assigned, continue from the 8th point, otherwise perform the steps below.
+
 1. Add the following configurations under the *Basics* tab and leave the rest to default:
 
    - User principal name: **AVDUser01 (1)**
@@ -133,6 +135,7 @@ In this exercise, you will use PowerShell to run a script that resets the passwo
 1. The output of the script will be similar to the one shown below. The password for both **AVDUser01** and **AVDUser02** is reset to **Azure1234567**.
 
     ![ws name.](media/vd30.png)
+
     ![ws name.](media/vd29.png) 
 
    >**Note**: ***Username*** and ***Password*** for ***AVDUser01*** and ***AVDUser02*** is present in Environment Details tab.
@@ -207,6 +210,8 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
 1. If prompted to stay signed in, you can click **"No"**.
 
+   ![](media/login1.png)
+
 1. Tap on **Finish** in the Mobile Device.
 
    > NOTE: While logging in again, enter the digits displayed on the screen in the **Authenticator app** and click on Yes.
@@ -216,6 +221,8 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
    ![ws name.](media-2/avddesktop.png)
 
 1. Select **Allow** on the prompt asking permission to **Access local resources**.
+
+1. On the **In Session Settings** screen, leave **Clipboard** checked so that you can copy and paste between your local device and the session, then click **Connect**.
 
     ![ws name.](media/lab4-10.png)
 
@@ -231,19 +238,15 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
     ![ws name.](./media/sessiondesktop.png)
 
-1. Navigate to **Your Own PC/computer/workstation**, go to **Start** search for **Remote desktop** and open the application with the exact icon as shown below.
+1. Navigate to **Your Own PC/computer/workstation**, go to **Start** search for **Windows App** and open the application with the exact icon as shown below.
 
     ![ws name.](media/137.png)
 
-1. Click on the **ellipsis (...)** and select **Unsubscribe**. Click on **Continue** in the Are you sure you want to unsubscribe? tab.
+1. Click on the **account icon** in the top-right corner, then select **Sign in with another account**.
 
     ![ws name.](media/lb16.png)
 
       >**Note:** We need to unsubscribe from the feed because in Exercise 4 we subscribed to the AVD feed using a different user.
-
-1. Click on the **Subscribe** button.
-
-     ![ws name.](media/a49.png)
 
 1. Enter the user credentials to access the workspace.
 
@@ -260,15 +263,13 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
    ![](media/login1.png)
 
-1. If prompted, make sure to **uncheck** *Allow my organization to manage my device* and click on **No, sign in to this app only**.
-
-     ![ws name.](media/ex4t1s9.png)
-
 1. In the AVD client, double-click on the **Session Desktop** to access it. 
 
      ![ws name.](media-2/avddesktop.png)
 
 1. Select **Allow** on the prompt asking permission to *Access local resources*.
+
+1. On the **In Session Settings** screen, leave **Clipboard** checked so that you can copy and paste between your local device and the session, then click **Connect**.
 
     ![ws name.](media/lab4-10.png)
 
@@ -282,7 +283,7 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
      ![ws name.](./media/sessiondesktop1.png) 
 
-1. Return to the Azure portal in your browser inside the **JumpVM**, search for **host pools** and click on **Host pools** from the suggestion to open it.
+1. Return to the Azure portal in your browser inside the **JumpVM**, search for **Host pools (1)** and click on **Host pools (2)** from the suggestion to open it.
 
      ![ws name.](media/lb38.png)
 
@@ -340,7 +341,9 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
 1. Select **Allow** on the prompt asking permission to *Access local resources*.
 
-     ![ws name.](media/lab4-1.png)
+1. On the **In Session Settings** screen, leave **Clipboard** checked so that you can copy and paste between your local device and the session, then click **Connect**.
+
+     ![ws name.](media/lab4-10.png)
 
 1. Enter your **credentials** to access the application and click on **Submit**.
 
@@ -356,7 +359,7 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
      ![ws name.](./media/sessiondesktop.png)
 
-1. Navigate to **Your Own PC/computer/workstation**, go to **Start** search for **Remote desktop** and open the application with the exact icon as shown below.
+1. Navigate to **Your Own PC/computer/workstation**, go to **Start** search for **Windows App** and open the application with the exact icon as shown below.
 
      ![ws name.](media/137.png)
 
@@ -377,7 +380,7 @@ While creating the GS-AVD-HP host pool, we selected the load balancing method as
 
      ![ws name.](./media/sessiondesktop1.png) 
 
-1. Return back to the Azure portal in the **JumpVM**, navigate to **GS-AVD-HP** host pool and open **Session Hosts** present under ***Manage** blade.
+1. Return back to the Azure portal in the **JumpVM**, navigate to **GS-AVD-HP** host pool and open **Session Hosts** present under **Manage** blade.
 
      ![ws name.](media-2/avdsession.png)
 

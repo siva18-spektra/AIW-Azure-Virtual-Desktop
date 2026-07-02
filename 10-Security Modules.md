@@ -169,7 +169,7 @@ In this exercise, you will create and configure a Conditional Access policy by d
 
 In this exercise, you will enable and validate Screen Capture Protection for Azure Virtual Desktop by switching the host pool to a validation environment, connecting through the Remote Desktop client, installing and applying AVD Group Policy templates, configuring the Screen Capture Protection policy and registry settings, and finally confirming the feature by capturing a screenshot that shows the session desktop blacked out.
 
-1. Return to the Azure portal in your browser inside the **JumpVM**, search for **host pools** and click on **Host pools** from the search result.
+1. Return to the Azure portal in your browser inside the **JumpVM**, search for **Host pools (1)** and click on **Host pools (2)** from the search result.
 
    ![ws name.](media/lb38.png)
    
@@ -185,17 +185,13 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
 
    ![](media-2/validation.png)
    
-1. Navigate to **Your Own PC/computer/workstation**, go to **Start** search for **Remote desktop** and open the application with the exact icon as shown below.
+1. Navigate to **Your Own PC/computer/workstation**, go to **Start** search for **Windows App** and open the application with the exact icon as shown below.
 
    ![ws name.](media/137.png)
    
-1. Click on the **ellipsis (...)** and select **Unsubscribe**. Click on **Yes** if prompted.
+1. Click on the **account icon** in the top-right corner, then select **Sign in with another account**.
 
     ![ws name.](media/lb16.png)
-
-1. Click on the **Subscribe** button.
-
-    ![ws name.](media/a49.png)
 
 1. Enter the user credentials to access the workspace.
 
@@ -210,10 +206,6 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
       ![ws name.](media/vd6.png)
       
       >**Note:** Once you enter the credentials, if there is an authentication request sent to the registered device, **Approve** it using the **Microsoft Authenticator App**
-
-1. If you get a page saying **Allow my organization to manage my device**, make sure to **uncheck** and click on **No, sign in to this app only**.
-
-   ![ws name.](media/ex4t1s9.png)
    
 1. Once you are signed in to the AVD client, double-click on the **SessionDesktop**.
 
@@ -326,7 +318,7 @@ In this exercise, you will enable and validate Screen Capture Protection for Azu
     - Select **Decimal (2)** under **Base**
     - Click on **Ok (3)**
 
-     ![](./media/decimal.png)
+      ![](./media/decimal.png)
      
 1. Restore the session host and take a screenshot using the Snipping tool from your Local desktop.
 

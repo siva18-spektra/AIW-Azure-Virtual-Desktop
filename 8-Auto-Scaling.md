@@ -94,14 +94,10 @@ In this exercise, you will create an Azure Virtual Desktop scaling plan by first
 
     ![](./media/selectmem.png)
    
-16. On **Select members (1)** tab, search for **Windows Virtual Desktop (2)** and select it then click on **Select (3)**.
+16. On **Select members (1)** tab, search for **Azure Virtual Desktop (2)** and select it then click on **Select (3)**.
 
-    >**Note:** In certain situations **Windows Virtual Desktop** might not be visible in the search results, in certain situations please search for **Azure virtual desktop** and select it from the search result.
     ![](./media/aaaa.png)
-
-    ![](./media/WindowsVirtualdesktop1.png)
-    
-    
+        
 17. After adding members, review the configuration and click on **Review + assign**.
 
     ![](./media/assignroleassignment.png)
@@ -131,6 +127,7 @@ In this exercise, you will create an Azure Virtual Desktop scaling plan by first
     - Click on **Next : Schedules > (9)**
 
         ![](./media/vd38.png)
+
         ![](./media/vd39.png)
       
 22. On the **Schedules** tab, click on **+ Add Schedule**

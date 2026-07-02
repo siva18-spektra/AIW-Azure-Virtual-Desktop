@@ -49,25 +49,25 @@ In this exercise, you go through the steps to create a rule set in **FSLogix App
 
 In this task, you will download the pre-created rule sets into the session host using a PowerShell script.
 
-1. In your Azure portal search for Virtual Machines in the search bar and click on Virtual Machines from the suggestions.
+1. In your Azure portal search for **Virtual Machines (1)** in the search bar and click on **Virtual Machines (2)** from the suggestions.
 
-   ![image](https://user-images.githubusercontent.com/83349577/175346152-3f8dce30-9412-49c7-a974-6b2b0c9d1479.png)
+   ![](media-1/task2step1.png)
 
-1. Click on AVD-HP01-S-0.
+1. Click on **AVD-HP01-S-0**.
 
-   ![](media-1/new-avd-lab13-4.jpg)
+   ![](media-1/new-avd-lab13-4.png)
    
-1. Then click on the Run command under Operations.
+1. Then click on the **Run command** under **Operations**.
 
-   ![](media-1/new-avd-lab13-5.jpg)
+   ![](media-1/new-avd-lab13-5.png)
 
 1. Now select RunPowerShellScript.
  
-   ![image](https://user-images.githubusercontent.com/83349577/175346633-755b0351-9aa1-4632-af15-66412246ea55.png)
+   ![](media-1/task2step4.png)
 
 1. A similar window to that of the below image will appear.
 
-   ![image](https://user-images.githubusercontent.com/83349577/175346718-bf993fb4-06b8-4bca-8f61-7750c7f46c11.png)
+   ![](media-1/task2step5.png)
 
 1. Copy the script given below and paste it by using Ctrl + V in the Powershell window.
 
@@ -83,23 +83,25 @@ In this task, you will download the pre-created rule sets into the session host 
    Write-Host "Script Executed successfully"
    ```
 
-   ![](media-1/script.png)
+   ![](media-1/task2step6.png)
   
 1. Then click on **Run** to execute the script.
 
+   ![](media-1/task2step7.png)
+
 1. Wait for some time for the script to execute. Once done, it will show an output saying **Script Executed successfully**.
 
-   ![](media-1/new-avd-lab13-6.jpg)
+   ![](media-1/task2step8.png)
 
    >**Note**: It will take around 1-2 minutes for the script to execute.
    
 1. Navigate to virtual machines and click on **AVD-HP01-SH-1**.
 
-   ![](media-1/new-avd-lab13-7.jpg)
+   ![](media-1/task2step9.png)
 
 1. Click on **Run command (1)** under Operations. Then select **RunPowerShellScript (2)**.
 
-   ![](media-1/new-avd-lab13-8.jpg)
+   ![](media-1/task2step10.png)
 
 1. Copy the script given below and paste it by using Ctrl + V in the Powershell window.
 
@@ -116,23 +118,25 @@ In this task, you will download the pre-created rule sets into the session host 
    Write-Host "Script Executed successfully"
    ```
 
-   ![image](media-1/script.png)
+   ![image](media-1/task2step11.png)
 
 1. Then click on Run to execute the script.
 
+   ![](media-1/task2step12.png)
+
 1. Wait for some time for the script to execute. Once done, it will show an output saying Script Executed successfully.
 
-   ![](media-1/9new-avd-lab13-8.jpg)
+   ![](media-1/task2step13.png)
 
    > **Note:** It will take around 1-2 minutes for the script to execute.
 
-1. On your PC, go to **Start** and search for **Remote desktop** and open the remote desktop application with the exact icon as shown below.
+1. On your PC, go to **Start** and search for **Windows App** and open the remote desktop application with the exact icon as shown below.
 
    ![ws name.](media/137.png)
    
-1. Once the application opens, click on **Subscribe**.
+1. Click on the **account icon** in the top-right corner, then select **Sign in with another account**.
 
-   ![ws name.](media/a49.png)
+   ![ws name.](media/lb16.png)
   
 1. Enter your **credentials** to access the workspace.
 
@@ -144,13 +148,9 @@ In this task, you will download the pre-created rule sets into the session host 
 
      ![ws name.](media/96.png)
    
-   >**Note:** If there's a dialog box saying **Stay signed in**, then select the **No** option.
+      >**Note:** If there's a dialog box saying **Stay signed in**, then select the **No** option.
 
-   ![](media/login1.png)
-
-1. Make sure to **uncheck** Allow my organization to manage my device and click on **No, sign in to this app only**.
-
-   ![ws name.](media/ex4t1s9.png)
+      ![](media/login1.png)
       
 1. The AVD dashboard will launch, then double-click on the **SessionDesktop** application to access it.
 
@@ -160,7 +160,7 @@ In this task, you will download the pre-created rule sets into the session host 
 
    - Password: **<inject key="AzureAdUserPassword"></inject>**
    
-   ![ws name.](media/avd-14.png)
+     ![ws name.](media/avd-14.png)
 
 1. Wait for the Session Desktop to connect.
 
@@ -218,7 +218,9 @@ In this task, you will download the pre-created rule sets into the session host 
 
 1. Select **Allow** on the prompt asking permission to *Access local resources*.
 
-   ![](media-1/new-avd-lab13-12.jpg)
+1. On the **In Session Settings** screen, leave **Clipboard** checked so that you can copy and paste between your local device and the session, then click **Connect**.
+
+   ![ws name.](media/lab4-10.png)
 
 1. Enter your **credentials** to access the application and click on **Submit**.
 
@@ -226,7 +228,7 @@ In this task, you will download the pre-created rule sets into the session host 
    
    - Password: Paste the password  **<inject key="AVD User Password"></inject>** and click on **Submit**.
    
-      ![ws name.](media/lb52.png)
+      ![ws name.](media/lab4-2-1.png)
      
 1. Within the session desktop, go to Start and search for **Access (1)** and double-click on **Access (2)** to open the application. Here you will not be able to open the app due to the hiding rule applied to your session desktop through JumpVM. 
 
