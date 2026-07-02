@@ -115,7 +115,7 @@ In this exercise, you will enable diagnostics for the AVD workspace by configuri
 
 1. On the **Deploy template** page, Click on **deploy**.
 
-   ![ws name.](media/L2AE2S12A.png)
+   ![ws name.](media/L2AE2S12a.png)
 
 1. Once the deployment is successful, **Refresh** the **CheckAMAConfiguration** page 2-3 times as it takes some time to load the details. You'll be able to see the Data Collection rule has been created.
 
